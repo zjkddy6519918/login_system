@@ -50,6 +50,25 @@
                     checkboxes[i].checked = this.checked;
                 }
             }
+
+            var previous_li = document.getElementById("previous");
+            if (${requestScope.usersByPage.currentPage == 1}){
+                previous_li.setAttribute("class","disabled");
+            } else {
+                previous_li.removeAttribute("class");
+                var previous_a = previous_li.getElementsByTagName("a")[0];
+                previous_a.href = "${pageContext.request.contextPath}/FindUsersByPageServlet?currentPage=${requestScope.usersByPage.currentPage - 1}&rowCount=5&&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}";
+            }
+
+
+            var next_li = document.getElementById("next");
+            if (${requestScope.usersByPage.currentPage} == ${requestScope.usersByPage.totalPage}){
+                next_li.setAttribute("class","disabled");
+            } else {
+                next_li.removeAttribute("class");
+                var next_a = next_li.getElementsByTagName("a")[0];
+                next_a.href = "${pageContext.request.contextPath}/FindUsersByPageServlet?currentPage=${requestScope.usersByPage.currentPage + 1}&rowCount=5&&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}";
+            }
         }
     </script>
 </head>
@@ -57,18 +76,18 @@
 <div class="container">
     <h3 style="text-align: center">用户信息列表</h3>
     <div style="float: left;margin: 5px;">
-        <form class="form-inline">
+        <form class="form-inline" action="${pageContext.request.contextPath}/FindUsersByPageServlet" method="post">
             <div class="form-group">
                 <label for="name">姓名</label>
-                <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                <input type="text" class="form-control" id="name" name="name" value="${requestScope.condition.name[0]}" placeholder="请输入姓名">
             </div>
             <div class="form-group">
                 <label for="address">籍贯</label>
-                <input type="text" class="form-control" id="address" placeholder="请输入籍贯">
+                <input type="text" class="form-control" id="address" name="address" value="${requestScope.condition.address[0]}" placeholder="请输入籍贯">
             </div>
             <div class="form-group">
                 <label for="email">邮箱</label>
-                <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                <input type="text" class="form-control" id="email" name="email" value="${requestScope.condition.email[0]}" placeholder="请输入邮箱">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -91,7 +110,7 @@
                 <th>邮箱</th>
                 <th>操作</th>
             </tr>
-            <c:forEach items="${requestScope.users}" var="user" varStatus="status">
+            <c:forEach items="${requestScope.usersByPage.list}" var="user" varStatus="status">
             <tr>
                 <td><input type="checkbox" name="uid" value="${user.id}"></td>
                 <td>${status.count}</td>
@@ -112,22 +131,28 @@
     <div>
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                <li class="disabled">
+                <li class="disabled" id="previous">
                     <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
                 </li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
+<%--                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>--%>
+                <c:forEach begin="1" end="${requestScope.usersByPage.totalPage}" var="i">
+                    <c:choose>
+                        <c:when test="${requestScope.usersByPage.currentPage == i}">
+                            <li class="active"><a href="${pageContext.request.contextPath}/FindUsersByPageServlet?currentPage=${i}&rowCount=5&&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li><a href="${pageContext.request.contextPath}/FindUsersByPageServlet?currentPage=${i}&rowCount=5&&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a></li>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+                <li id="next">
                     <a href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>
                 </li>
                 <span style="font-size: 25px;margin-left: 5px">
-                       共16条记录，共4页
-                    </span>
+                       共${requestScope.usersByPage.totalCount}条记录，共${requestScope.usersByPage.totalPage}页
+                </span>
             </ul>
 
         </nav>

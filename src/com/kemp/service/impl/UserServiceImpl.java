@@ -2,10 +2,12 @@ package com.kemp.service.impl;
 
 import com.kemp.dao.UserDao;
 import com.kemp.dao.impl.UserDaoImpl;
+import com.kemp.domain.PageBean;
 import com.kemp.domain.User;
 import com.kemp.service.UserService;
 
 import java.util.List;
+import java.util.Map;
 
 public class UserServiceImpl implements UserService {
 
@@ -48,5 +50,19 @@ public class UserServiceImpl implements UserService {
                 dao.delete(Integer.parseInt(id));
             }
         }
+    }
+
+    @Override
+    public PageBean<User> findUsersByPage(int currentPage, int rowCount, Map<String, String[]> condition) {
+        PageBean<User> pageBean = new PageBean<>();
+        pageBean.setCurrentPage(currentPage);
+        pageBean.setRowCount(rowCount);
+        int totalCount = dao.findTotalCount(condition);
+        pageBean.setTotalCount(totalCount);
+        pageBean.setList(dao.findUsersByPage((currentPage-1) * rowCount, rowCount,condition));
+        pageBean.setTotalPage(totalCount % rowCount == 0
+                ?totalCount / rowCount
+                :(totalCount / rowCount + 1));
+        return pageBean;
     }
 }
