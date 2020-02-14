@@ -30,6 +30,8 @@ public class LoginServlet extends HttpServlet {
         if (!checkcode_server.equalsIgnoreCase(verifycode)){
             //验证码不正确
             request.setAttribute("login_msg", "验证码错误！");
+            String msg = (String)request.getAttribute("login_msg");
+            System.out.println(new String(msg.getBytes("GBK"),"UTF-8"));
             request.getRequestDispatcher("/login.jsp").forward(request, response);
             return;
         }
