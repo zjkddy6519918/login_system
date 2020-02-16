@@ -20,6 +20,8 @@ public class LoginFilter implements Filter {
         if (uri.contains("/login.jsp") || uri.contains("/LoginServlet")
                 || uri.contains("/css/")|| uri.contains("/js/")
                 || uri.contains("/fonts/")|| uri.contains("/CheckCodeServlet")
+                || uri.contains("/register.jsp")|| uri.contains("/RegisterServlet")
+                || uri.contains("/CheckUsernameServlet")
         ) {
             chain.doFilter(req, resp);
         } else {

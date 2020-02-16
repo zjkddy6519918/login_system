@@ -14,7 +14,8 @@ public interface UserService {
     public User findUser(String id);
     public void updateUser(User user);
     public void delSelectedUsers(String[] ids);
-
+    public boolean userExist(String username);
+    public void register(String username, String password);
     /**
      * 分页条件查询
      * @param currentPage

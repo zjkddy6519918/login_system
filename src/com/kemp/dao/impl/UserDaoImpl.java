@@ -106,4 +106,24 @@ public class UserDaoImpl implements UserDao {
         List<User> queryRs = template.query(sb.toString(), new BeanPropertyRowMapper<User>(User.class),params.toArray());
         return queryRs;
     }
+
+    @Override
+    @SuppressWarnings("all")
+    public boolean findUserByUsername(String username) {
+        String sql = "select 1 from user where username = ?";
+        try{
+            Integer rs = template.queryForObject(sql, Integer.class,username);
+            return rs == 1;
+        } catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+
+    }
+
+    @Override
+    public void addByUsernameAndPassword(String username, String password) {
+        String sql = "insert into user(name,age,username,password) values ('ADMIN',0,?,?)";
+        template.update(sql, username,password);
+    }
 }

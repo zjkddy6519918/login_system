@@ -53,6 +53,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public boolean userExist(String username) {
+        return dao.findUserByUsername(username);
+    }
+
+    @Override
+    public void register(String username, String password) {
+        dao.addByUsernameAndPassword(username, password);
+    }
+
+    @Override
     public PageBean<User> findUsersByPage(int currentPage, int rowCount, Map<String, String[]> condition) {
         PageBean<User> pageBean = new PageBean<>();
         pageBean.setCurrentPage(currentPage);

@@ -14,5 +14,6 @@ public interface UserDao {
     public void update(User user);
     public int findTotalCount(Map<String, String[]> condition);
     public List<User> findUsersByPage(int start, int rowCount, Map<String, String[]> condition);
-
+    public boolean findUserByUsername(String username);
+    public void addByUsernameAndPassword(String username, String password);
 }

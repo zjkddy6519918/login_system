@@ -52,7 +52,9 @@
         <hr/>
         <div class="form-group" style="text-align: center;">
             <input class="btn btn btn-primary" type="submit" value="登录">
+            <a class="btn btn-primary" href="register.jsp">注册</a>
         </div>
+
     </form>
 
     <!-- 出错显示的信息框 -->

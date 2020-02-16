@@ -45,7 +45,9 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
         }
         UserService service = new UserServiceImpl();
+        System.out.println("loginUser:"+loginUser);
         User user = service.login(loginUser);
+        System.out.println("user:"+user);
         if (user != null){
             request.getSession().setAttribute("user", user);
             response.sendRedirect(request.getContextPath()+"/index.jsp");

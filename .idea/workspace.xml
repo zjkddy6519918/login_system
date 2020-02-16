@@ -7,19 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c763bb85-9127-4456-85a2-8a47496b7f7d" name="Default Changelist" comment="添加了登录校验功能">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kemp/test/TestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kemp/web/filter/SensitiveWordsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sensitive.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kemp/web/servlet/CheckUsernameServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kemp/web/servlet/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-annotations-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/login_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/test/DruidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/test/DruidTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/SensitiveWordsFilter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/SensitiveWordsFilter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/SensitiveWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/WEB-INF/classes/com/kemp/web/filter/SensitiveWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/login_system_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/test/DruidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/test/DruidTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/LoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/LoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/SensitiveWordsFilter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/SensitiveWordsFilter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/SensitiveWordsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/login_system/com/kemp/web/filter/SensitiveWordsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kemp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kemp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kemp/test/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/test/DruidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,29 +68,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="69" column="51" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/SensitiveWordsFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="511">
+              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2924#2948#0" expanded="true" />
+                <element signature="e#3955#3979#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="220">
+              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/FindUsersByPageServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/RegisterServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="29" />
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/test/TestServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/test/DruidTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kemp/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -81,8 +191,8 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -104,32 +214,35 @@
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/list.html" />
         <option value="$PROJECT_DIR$/src/com/kemp/util/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/test/DruidTest.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/UserListServlet.java" />
         <option value="$PROJECT_DIR$/web/add.html" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/CheckCodeServlet.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/domain/User.java" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/add.jsp" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/FindUserServlet.java" />
         <option value="$PROJECT_DIR$/web/update.jsp" />
         <option value="$PROJECT_DIR$/src/com/kemp/domain/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/AddUserServlet.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/DelSelectedServlet.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/DelUserServlet.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/UpdateUserServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/FindUsersByPageServlet.java" />
         <option value="$PROJECT_DIR$/web/list.jsp" />
         <option value="$PROJECT_DIR$/src/敏感词汇.txt" />
-        <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/test/TestServlet.java" />
         <option value="$PROJECT_DIR$/src/com/kemp/web/filter/SensitiveWordsFilter.java" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/CheckUsernameServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/kemp/test/DruidTest.java" />
       </list>
     </option>
   </component>
@@ -140,9 +253,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="970" />
-    <option name="y" value="454" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="726" />
+    <option name="y" value="53" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
@@ -153,8 +266,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,6 +292,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="kemp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kemp" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kemp" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kemp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kemp" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
@@ -216,7 +363,28 @@
             <path>
               <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
               <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kemp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_system" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +401,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -243,10 +411,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Intellij_Workspace\javaweb\login_system\web\WEB-INF\lib" />
       <recent name="E:\Intellij_Workspace\javaweb\login_system\src" />
       <recent name="E:\Intellij_Workspace\javaweb\login_system\src\com\kemp\web\servlet" />
       <recent name="E:\Intellij_Workspace\javaweb\login_system\web" />
-      <recent name="E:\Intellij_Workspace\javaweb\login_system\web\WEB-INF\lib" />
       <recent name="E:\Intellij_Workspace\javaweb\login_system\web\fonts" />
     </key>
   </component>
@@ -263,6 +431,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.22">
+    <configuration name="DruidTest.testCheckUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="login_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kemp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kemp.test" />
+      <option name="MAIN_CLASS_NAME" value="com.kemp.test.DruidTest" />
+      <option name="METHOD_NAME" value="testCheckUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DruidTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="login_system" />
       <extension name="coverage">
@@ -274,6 +458,22 @@
       <option name="PACKAGE_NAME" value="com.kemp.test" />
       <option name="MAIN_CLASS_NAME" value="com.kemp.test.DruidTest" />
       <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DruidTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="login_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kemp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kemp.test" />
+      <option name="MAIN_CLASS_NAME" value="com.kemp.test.DruidTest" />
+      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -370,9 +570,13 @@
       <item itemvalue="JUnit.DruidTest.testConnection" />
       <item itemvalue="JUnit.DruidTest.testQuery" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.22" />
+      <item itemvalue="JUnit.DruidTest.testCheckUsername" />
+      <item itemvalue="JUnit.DruidTest.testLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DruidTest.testLogin" />
+        <item itemvalue="JUnit.DruidTest.testCheckUsername" />
         <item itemvalue="JUnit.DruidTest.testQuery" />
         <item itemvalue="JUnit.DruidTest.testConnection" />
       </list>
@@ -395,6 +599,7 @@
       <workItem from="1581497147187" duration="10061000" />
       <workItem from="1581511722004" duration="8000" />
       <workItem from="1581514957612" duration="1295000" />
+      <workItem from="1581830543196" duration="7490000" />
     </task>
     <task id="LOCAL-00001" summary="添加了登录校验功能">
       <created>1581497079604</created>
@@ -413,25 +618,40 @@
     <history-entry file="DruidTest_testQuery - 2020.02.10 at 20h 12m 09s.xml">
       <configuration name="DruidTest.testQuery" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DruidTest_testCheckUsername - 2020.02.16 at 14h 06m 37s.xml">
+      <configuration name="DruidTest.testCheckUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DruidTest_testCheckUsername - 2020.02.16 at 14h 07m 35s.xml">
+      <configuration name="DruidTest.testCheckUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DruidTest_testLogin - 2020.02.16 at 16h 17m 35s.xml">
+      <configuration name="DruidTest.testLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DruidTest_testLogin - 2020.02.16 at 16h 19m 19s.xml">
+      <configuration name="DruidTest.testLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DruidTest_testLogin - 2020.02.16 at 16h 19m 49s.xml">
+      <configuration name="DruidTest.testLogin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53047000" />
+    <option name="totallyTimeSpent" value="60537000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="726" y="53" width="1294" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4929797" visible="true" weight="0.1200318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49232584" visible="true" weight="0.20016207" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.5070203" side_tool="true" visible="true" weight="0.1200318" />
+      <window_info id="Web" order="7" sideWeight="0.50767416" side_tool="true" visible="true" weight="0.20016207" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299293" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3346426" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3346426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998429" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,16 +704,6 @@
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap-theme.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/test/DruidTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kemp/util/JDBCUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -515,51 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
           <caret line="4" column="38056" selection-start-line="4" selection-start-column="38046" selection-end-line="4" selection-end-column="38056" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,59 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2508">
           <caret line="114" column="45" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,13 +868,6 @@
     <entry file="file://$PROJECT_DIR$/src/druid.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Programming/JDK12/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1179">
@@ -784,17 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/test/TestServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/SensitiveWordsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="308">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -805,17 +907,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="607">
+          <caret line="66" column="6" selection-start-line="33" selection-end-line="66" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/SensitiveWordsFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/filter/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/CheckUsernameServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="22" />
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="69" column="51" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/test/TestServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/web/servlet/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/test/DruidTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kemp/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2924#2948#0" expanded="true" />
+            <element signature="e#3955#3979#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
