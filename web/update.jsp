@@ -21,6 +21,25 @@
     <!-- 3. 导入bootstrap的js文件 -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        // 利用AJAX动态载入籍贯
+        $(function () {
+            $.get("${pageContext.request.contextPath}/FindProvinceServlet",
+                {},
+                function (data) {
+                    $(data).each(function (index,element) {
+                        var option = document.createElement("option");
+                        $(option).prop("id",$(element).id);
+                        $(option).val(element.name);
+                        $(option).html(element.name)
+                        if (element.name == "${user_update.address}"){
+                            $(option).prop("selected",true);
+                        }
+                        $(option).appendTo($("#jiguan"));
+                    });
+                },
+                "json"
+            );
+        });
     </script>
 </head>
 <body>
@@ -51,24 +70,8 @@
 
         <div class="form-group">
             <label for="address">籍贯：</label>
-            <select name="address" class="form-control" >
-                <c:choose>
-                    <c:when test="${user_update.address=='广东'}">
-                        <option value="广东" selected="selected">广东</option>
-                        <option value="广西">广西</option>
-                        <option value="湖南">湖南</option>
-                    </c:when>
-                    <c:when test="${user_update.address=='广西'}">
-                        <option value="广东" selected="selected">广东</option>
-                        <option value="广西">广西</option>
-                        <option value="湖南">湖南</option>
-                    </c:when>
-                    <c:otherwise>
-                        <option value="广东">广东</option>
-                        <option value="广西">广西</option>
-                        <option value="湖南" selected="selected">湖南</option>
-                    </c:otherwise>
-                </c:choose>
+            <select name="address" class="form-control" id="jiguan">
+
             </select>
         </div>
 

@@ -78,6 +78,23 @@
             }
             return true;
         }
+
+        // 利用AJAX动态载入籍贯
+        $(function () {
+            $.get("${pageContext.request.contextPath}/FindProvinceServlet",
+                {},
+                function (data) {
+                    $(data).each(function (index,element) {
+                       var option = document.createElement("option");
+                       $(option).prop("id",$(element).id);
+                       $(option).val(element.name);
+                       $(option).html(element.name)
+                       $(option).appendTo($("#jiguan"));
+                    });
+                },
+                "json"
+            );
+        });
     </script>
 </head>
 <body>
@@ -100,9 +117,7 @@
         <div class="form-group">
             <label for="address">籍贯：</label>
             <select name="address" class="form-control" id="jiguan">
-                <option value="广东" id="address">广东</option>
-                <option value="广西">广西</option>
-                <option value="湖南">湖南</option>
+                <option>--请选择籍贯--</option>
             </select>
         </div>
         <div class="form-group">

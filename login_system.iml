@@ -32,5 +32,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="jackson-annotations-2.2.3" level="project" />
+    <orderEntry type="library" name="jedis-2.7.0" level="project" />
   </component>
 </module>
